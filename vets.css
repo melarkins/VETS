@@ -1,0 +1,430 @@
+*{      box-sizing: border-box; }
+body {  background-color: #ffffff;
+         color: #000000; 
+         font-family:Arial, Helvetica, sans-serif;
+         margin: 0;}
+
+header { background-color: #2D2831;         
+         color: #AE3E3E;
+         padding-left: 0px;
+         padding-top: 1px;
+         padding-bottom: 1px;
+         height: 100px;
+         text-align: center;
+         font-family: Stencil;
+         border-bottom: 1px solid #AE3E3E;}
+
+
+header a {text-decoration: none;}
+header a:link {color: #AE3E3E;}
+header a:visited {color: #A5BFCC;}
+header a:hover {color: #ffffff;}
+
+header h1 {font-size: 2em;
+           text-shadow: 2px 2px 3px #000000;
+           margin-bottom: 0;
+           margin-top: 0;}
+
+header p {color: #AE3E3E;
+           text-shadow: 1px 1px 2px #000000;
+           font-family: 'Courier New', Courier, monospace;
+           font-weight: bold;
+           font-size: .5em;
+           margin-top: 0;}
+
+
+h1 { font-size: 3em;
+     text-align: center;
+     font-family: Stencil;}
+
+h2, h3 {color: #8C3826;
+        font-family: Stencil;
+        text-align: center;
+        font-size: 2em;
+        }
+
+h4 { background-color: #050533;
+     font-size: 1.2em;
+     padding-left: .5em;
+     padding-bottom: 0em;
+     text-transform: uppercase;
+     border-bottom: 1px solid #231814;
+     clear: left;}
+
+
+
+   
+nav li  {
+        width: 100%;
+        border-bottom: 1px solid #AE3E3E;
+        text-align: center;}
+
+
+
+.main-navigation{    
+                margin:0;
+        }
+      
+ul      {margin:0;
+         padding:0;
+        }
+      
+.menu   {display: flex;  
+         flex-direction:column;
+         justify-content: space-evenly;   
+}
+
+li{     
+          display:block;
+          justify-content: center;
+          list-style-type:none;
+          text-transform:uppercase;
+          text-align: justify;
+        }
+        
+li a{
+          display:flex;
+          text-align:center;
+          text-decoration:none;
+          color:#050533;
+          padding:1rem;
+          justify-content: center;
+        }
+        
+li a:hover{
+          background-color:#AE3E3E;
+          color:#fff;
+        }
+       
+
+
+nav ul ul {background-color: #A5BFCC;
+        display: none;
+        position: relative;        
+}
+
+nav ul li:hover > ul {
+        display: block;
+        color: #fff;
+        padding-left: .2em;
+}
+
+.sub-menu li { justify-content: center;
+                display: flex;
+                padding-right: .2em;
+        }
+
+li:hover, li a:hover{
+                background-color: #ffffff;
+                color: #777;
+        }
+
+
+nav ul ul ul {
+        margin: 0 0 0 100%;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+}
+
+
+main {  background-color: #ffffff;
+        padding: 0 0 1em 0;
+        display: block;
+        }
+
+main h2, h3, h4, p, dl { padding-left: 1em;
+                              padding-right: 1em;} 
+
+#center {text-align: center;}
+
+#align {text-align: center;}
+
+main h2 {color:#ffffff;
+        background-color: #2D2831;
+        font-family:'Courier New', Courier, monospace;
+        font-weight: bold;
+        text-shadow: none;
+        margin-top: .5px;
+        }
+
+caption {font-weight: bold;
+         font-size: 1em;
+         margin-bottom: 10px;}
+
+table {margin: auto;
+       }
+
+td, th {padding: .5em;
+        font-family: 'Courier New', Courier, monospace;}
+
+#nohike {color:#AE3E3E;
+         font-size: 2em;
+        font-weight: bold;
+        text-align: center;}
+
+footer {background-color: #2D2831;
+        color: #ffffff;
+        font-size: 1em;
+        font-style: italic;
+        text-align: center;
+        padding: 1em;
+        border-top: 2px solid #ffffff;}
+
+footer a {color: #AE3E3E;}
+
+img {position: relative;
+     padding-left: 10px;
+     margin: auto;}
+
+.note {color:#AE3E3E;
+        font-size: 1em;
+        font-weight: bold;
+        font-style: italic;}
+
+#logo {float: left;
+       margin-left: 600px;}
+
+#homehero { background-image: url(images/veteran_background.jpg);
+            background-size: 100% 100%;
+            height: 500px;}
+#hero-mail {background-image: url(images/hero-mail.jpg);
+        background-size: 100% 100%;
+        height: 500px;}
+#hero-encourage {background-image: url(images/Wounded_Warrior_Project_Boulder_Crest_Veterans.jpg);
+                background-size: 100% 100%;
+                height: 500px;}
+
+#hero-pencourage {background-image: url(images/Wounded_Warrior_Project_Boulder_Crest_Veterans.jpg);
+                background-size: 100% 100%;
+                height: 500px;}
+
+#hero-serve {background-image: url(images/service.jpg);
+                 background-size: 100% 100%;
+                 height: 500px;
+                 margin-bottom: 5px;}
+
+#hero-explore {background-image: url(images/warrior-hike.jpg);
+                background-size: 100% 100%;
+                height: 500px;}
+
+#hero-text h1 {font-size: 50px;
+                text-align: center;
+               text-shadow:1px 1px 2px #000000;}
+
+#hero-text p {font-size: 30px;
+              text-shadow: 1px 1px 2px #000000;}
+
+#hero-text {text-align: center;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #ffffff;
+            margin-top:-35px; }
+
+#container {display: flex;
+            justify-content: center;
+            }
+
+#wrapper { background-color: #ffffff;
+            padding: 0;}
+
+.details{ padding-left: 20%;
+          padding-right: 20%;
+          overflow: auto;}
+
+.contact {display: grid;
+         grid-template-rows: auto;
+        grid-template-columns: 6em 1fr;
+        grid-gap: 1em;
+        width: 100%;
+        justify-content: center;
+        }
+
+.contact input[type="submit"] {grid-column: 2/3;
+                      width: 9em;}
+        
+input, textarea {margin-bottom: .5em;}
+
+#flow {margin: auto;
+        width: 100%;
+        text-align: center;}
+
+#mobile {display: inline;}
+#desktop {display: none;}
+
+
+.fa {   float: right;
+        padding-right: 10px;
+        font-size: 200px;
+        margin-top: 35px;
+        width: 40px;
+        text-align: left;
+        text-decoration: none;}
+
+figure {position: absolute;
+        left:10px;
+        text-align: center;
+        }
+
+#past {display: flex;
+       height: 500px;
+       margin: auto;
+       background-color: #ffffff;     
+    }
+
+
+#gallery {display: flex;
+        position: absolute;
+          margin: auto;
+        }
+
+#gallery ul {display: flex;
+             margin-top: 350px;
+             width: 50px;
+             }
+
+#gallery li {display: inline;
+            padding: 10px;
+        }
+
+#gallery img {border: none;}
+
+#gallery a {text-decoration: none;
+            color: #2D2831;
+            font-style: italic;}
+
+#gallery span {position: absolute;
+                left: -1000px;
+                opacity: 0;
+                transition: opacity 3s ease-in-out;}
+
+#gallery a:hover span {position: absolute;
+                        top: 16px;
+                        left: 50px;
+                        text-align: center;
+                        opacity: 1;
+                        background-color: #ffffff;}
+
+.responsive {width: 80%;
+             max-width:500px;
+             height: auto;}
+
+
+
+
+        @media (min-width: 600px) {
+                header  {text-align: center;
+                        padding-left: 0;
+                        }
+
+                header h1 {font-size: 2em;}
+                
+                header p {font-size: 1em;}
+
+                h1      {font-size: 3em;}
+
+                .menu  {display: flex; 
+                        flex-flow: row nowrap;
+                        justify-content: space-around;}
+
+                nav li  {border-bottom: 1px solid #AE3E3E;}
+
+
+                #homehero       {background-image: url(images/veteran_background.jpg);
+                                height: 50v;}
+                
+                #hero-encourage {background-image: url(images/Wounded_Warrior_Project_Boulder_Crest_Veterans.jpg);
+                                height: 50v;}
+
+                #hero-serve {background-image: url(images/service.jpg);
+                             height: 50v;}
+                       
+                #hero-explore {background-image: url(images/warrior-hike.jpg);
+                               height: 50v;}
+
+                #hero-mail {background-image: url(images/hero-mail.jpg);
+                           height: 50v;}
+
+                #hero-text {position: relative;
+                            margin-top: -68px}
+
+                #hero-text h1 {font-size: 100px;}
+
+                #flow   {display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        width: 70%;}
+
+                .order input[type="submit"] {
+                        margin: auto;
+                        width: 9em;
+                        margin-bottom: 1em;
+                }
+
+                #mobile {display: none;}
+
+                #desktop        {display: inline;}
+
+                .details        {display: flex;
+                                flex-direction: row;} 
+                                
+                h4      {margin-left: 10%;
+                        margin-right: 10%;}
+        
+
+                .contact {  display: grid;
+                        grid-template-rows: auto;
+                        grid-template-columns: 5em 1fr;
+                        grid-gap: 1em;
+                        width: 30%;
+                        
+                }
+
+                .contact input[type="submit"] {grid-column: 2/3;
+                              width: 9em;}
+
+                
+
+                
+                }
+
+        @media (min-width: 1024px) {
+
+                header  {grid-area: header; 
+
+                        }
+
+                nav     {grid-area: nav;
+                        }
+
+                main    {grid-area: main;
+                        }
+
+                footer  {grid-area: footer;}
+
+                #wrapper        {display: grid;                                 
+                                grid-template:
+                                        "header header"
+                                        "nav main"
+                                        "footer footer"
+                                /200px;}
+
+                .menu {flex-direction: column;}
+
+                nav ul ul {position: relative;}
+
+                nav li  {width: 100%;
+                        text-align: center;}
+
+                #hero-text {position: relative;
+                            margin-top: -65px;
+                            left: 47%;}
+
+                #flow {margin: auto;
+                       width: 90%;}
+
+                
+
+                
+               
+        }

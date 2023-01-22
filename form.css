@@ -1,0 +1,112 @@
+*{      box-sizing: border-box; }
+body {  background-color: #ffffff;
+         color: #000000; 
+         font-family:Arial, Helvetica, sans-serif;
+         margin: 0;}
+
+header { background-color: #2D2831;         
+         color: #AE3E3E;
+         padding-left: 0px;
+         padding-top: 1px;
+         padding-bottom: 1px;
+         height: 100px;
+         text-align: center;
+         font-family: Stencil;
+         border-bottom: 1px solid #AE3E3E;}
+
+
+header a {text-decoration: none;}
+header a:link {color: #AE3E3E;}
+header a:visited {color: #A5BFCC;}
+header a:hover {color: #ffffff;}
+
+header h1 {font-size: 2em;
+           text-shadow: 2px 2px 3px #000000;
+           margin-bottom: 0;
+           margin-top: 0;}
+
+header p {color: #AE3E3E;
+           text-shadow: 1px 1px 2px #000000;
+           font-family: 'Courier New', Courier, monospace;
+           font-weight: bold;
+           font-size: .5em;
+           margin-top: 0;}
+
+.center {color: #AE3E3E;
+    font-size: 3em;
+    text-align: center;
+    font-family: Stencil;
+}
+
+main {  background-color: #ffffff;
+        padding: 0 0 1em 0;
+        display: block;
+        }
+
+.signup {display: grid;
+          grid-template-rows: auto;
+          grid-template-columns: 6em 1fr;
+          grid-gap: 1em;
+          width: 100%;
+          justify-content: center;
+          padding-left: 3px;}
+   
+.signup input[type="submit"] {grid-column: 2/3;
+                         width: 9em;}
+           
+input, textarea {margin-left: 1em;
+                margin-bottom: .5em;}
+
+#mobile {display: inline;}
+#desktop {display: none;}
+
+
+.fa {   float: right;
+        padding-right: 10px;
+        font-size: 200px;
+        margin-top: 35px;
+        width: 40px;
+        text-align: left;
+        text-decoration: none;}
+
+        @media (min-width: 600px) {
+            header  {text-align: center;
+                    padding-left: 0;
+                    }
+
+            header h1 {font-size: 2em;}
+            
+            header p {font-size: 1em;}
+
+            h1      {font-size: 3em;}
+
+            #mobile {display: none;}
+
+            #desktop        {display: inline;}
+
+            .details        {display: flex;
+                            flex-direction: row;} 
+                            
+            
+            .signup {  display: grid;
+                    grid-template-rows: auto;
+                    grid-template-columns: 5em 1fr;
+                    grid-gap: 1em;
+                    width: 30%;
+                    
+            }
+
+            .signup input[type="submit"] {grid-column: 2/3;
+                          width: 9em;}
+
+            
+
+            
+            }
+
+    @media (min-width: 1024px) {
+
+            header  {grid-area: header; 
+
+                    }
+                }
